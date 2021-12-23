@@ -105,8 +105,8 @@ def play_game(game, player_1, player_2):
         print(f'{game.winner} wins!!!')
         game.print_board()
 
-
-play_game(TicTacToe(), SmartComputerPlayer('X'), HumanPlayer('O'))
+if __name__ == '__main__':
+    play_game(TicTacToe(), SmartComputerPlayer('X'), HumanPlayer('O'))
 
 # def game_sim(game, player_1, player_2):
 #     current_move = player_1
