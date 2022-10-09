@@ -2,14 +2,14 @@ import random
 import math
 
 """
-This module consatins all of the different player classes
+This module contains all of the different player classes
 that can be used in the Tic-Tac-Toe game.
 """
 
 
 class HumanPlayer:
     """
-    Class that represent s a Human playe for Tic-Tac-Toe. If this
+    Class that represents a Human player for Tic-Tac-Toe. If this
     class is used the player will be required to input each move
     through the command line.
     """

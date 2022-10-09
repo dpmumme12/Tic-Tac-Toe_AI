@@ -17,18 +17,21 @@ class TicTacToe:
 
     def print_board(self) -> None:
         """Prints the board in it's current state."""
+
         for row in self.board:
             print('| ' + ' | '.join(row) + ' |')
 
     @staticmethod
     def print_board_nums() -> None:
         """Prints the board with the number that correlates to each square."""
+
         board_nums = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8]], dtype='str')
         for row in board_nums:
             print('| ' + ' | '.join(row) + ' |')
 
     def available_moves(self) -> list:
         """Returns a list of all available moves that can be played."""
+
         valid_moves = np.argwhere(self.board == ' ')
         valid_moves = valid_moves.tolist()
         return [key for key, value in self.moves.items() if value.tolist() in valid_moves]
@@ -123,7 +126,7 @@ if __name__ == '__main__':
     play_game(TicTacToe(), HumanPlayer('X'), SmartComputerPlayer('O'))
 
 
-# ######Funtion to simulate games between different computer players########
+# ######Function to simulate games between different computer players########
 # def game_sim(game, player_1, player_2):
 #     current_move = player_1
 #     next_move = player_2
